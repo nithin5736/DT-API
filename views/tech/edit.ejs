@@ -1,0 +1,7 @@
+<% layout("layouts/boilerplate") %>
+
+<form method="POST" action="/api/techs/<%= tech._id %>?_method=PUT">
+    <label for="techStack">Tech:</label>
+    <input type="text" id="techStack" name="techStack" value="<%= tech.techStack %> " required>
+    <button>Submit</button>
+</form>

@@ -1,0 +1,11 @@
+<% layout("layouts/boilerplate") %> 
+
+<h2>TechStack: <%= tech.techStack %> </h2>
+<h3>id: <%= tech._id %> </h3>
+<a href="/api/techs">View techs</a>
+<br>
+<button><a href="/api/techs/<%= tech._id %>/edit">Edit</a></button>
+<br>
+<form action="/api/techs/<%= tech._id %>?_method=DELETE" method="post">
+    <button>Delete</button>
+</form>

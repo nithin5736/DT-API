@@ -1,0 +1,9 @@
+<% layout("layouts/boilerplate") %>
+
+<h1>Tech stacks</h1>
+<a href="/api/techs/new">Add new Tech</a>
+<ul>
+  <% for(let tech of techs){ %>
+  <li><a href="/api/techs/<%= tech._id %> "><%= tech.techStack %></a></li>
+  <% } %>
+</ul>
